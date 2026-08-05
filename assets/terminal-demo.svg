@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="368" viewBox="0 0 760 368" role="img" aria-label="Terminal demo of magiclock protect and magiclock run">
+  <rect x="0.5" y="0.5" width="759" height="367" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0.5" y="0.5" width="759" height="36" rx="12" fill="#161b22" stroke="#30363d"/>
+  <rect x="1" y="24" width="758" height="13" fill="#161b22"/>
+  <circle cx="24" cy="18.5" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="18.5" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="18.5" r="6" fill="#28c840"/>
+  <text x="380" y="23" text-anchor="middle" font-family="SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="12" fill="#8b949e">magiclock — zsh</text>
+  <g font-family="SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace" font-size="14">
+    <text x="28" y="72"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3" dx="8">pip install magiclock</tspan></text>
+    <text x="28" y="104"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3" dx="8">magiclock protect app.py</tspan></text>
+    <text x="28" y="130"><tspan fill="#3fb950">✔ app.pya written</tspan><tspan fill="#8b949e"> — encrypted, runs only on your authorized devices</tspan></text>
+    <text x="28" y="162"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3" dx="8">magiclock run app.pya</tspan></text>
+    <text x="28" y="188"><tspan fill="#e6edf3">hello from a protected app</tspan></text>
+    <text x="28" y="236"><tspan fill="#8b949e" font-style="italic"># the same file, copied to a machine you never authorized:</tspan></text>
+    <text x="28" y="268"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3" dx="8">magiclock run app.pya</tspan></text>
+    <text x="28" y="294"><tspan fill="#f85149">✖ refuses to decrypt</tspan><tspan fill="#8b949e"> — this machine is not authorized</tspan></text>
+    <text x="28" y="336"><tspan fill="#8b949e">Activate once online · every run after that is </tspan><tspan fill="#e6edf3">fully offline</tspan></text>
+  </g>
+</svg>
