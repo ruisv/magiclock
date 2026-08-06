@@ -117,21 +117,31 @@ Artifacts built *without* the flag stay forever offline and can never be remotel
 
 Compilers and packagers solve distribution, not protection or licensing; obfuscation can be reversed with enough effort. MagicLock combines encryption, node-locked licensing, and native compilation in one tool — and adds the things none of the above have: per-device model encryption and a remote kill switch.
 
+Full, regularly updated comparisons live on the website: **[magiclock.net/compare](https://magiclock.net/compare)**.
+
 ### MagicLock vs PyArmor
 
 PyArmor is the best-known Python **obfuscator**: it transforms your scripts into obfuscated bytecode, with machine binding available in its paid editions. Obfuscation still hands the complete program to whoever holds the file — with enough effort it can be reconstructed. MagicLock **encrypts** instead: on an unauthorized machine there is nothing to reverse, only ciphertext. MagicLock also covers what obfuscation can't — per-device AI model encryption and an opt-in remote kill switch — and its compiled tier ships native machine code with a license gate woven into every module.
+
+→ Full comparison: [magiclock.net/compare/pyarmor](https://magiclock.net/compare/pyarmor)
 
 ### MagicLock vs SOURCEdefender
 
 SOURCEdefender AES-encrypts `.py` files and decrypts them at import time, with optional time-limited scripts. It answers "can someone read my source?" but not "who is allowed to run it?" — there is no device binding, no model encryption, and no way to act after shipping. MagicLock adds node-locked licensing (artifacts refuse to decrypt on machines you haven't authorized), per-device AI model envelopes, a compiled native tier, and the opt-in cloud kill switch.
 
+→ Full comparison: [magiclock.net/compare/sourcedefender](https://magiclock.net/compare/sourcedefender)
+
 ### MagicLock vs Nuitka / Cython
 
 Nuitka and Cython **compile** Python to C and native code — excellent for performance and a real obstacle to casual reading, but they are not licensing tools: the binary runs for anyone who has it, forever, and bundled assets like model weights ship in plaintext next to it. MagicLock's compiled tier builds on native compilation too, then adds what compilers leave out: a license gate in every module, device binding, encrypted models, and expiry.
 
+→ Full comparison: [magiclock.net/compare/nuitka-cython](https://magiclock.net/compare/nuitka-cython)
+
 ### MagicLock vs PyInstaller
 
 PyInstaller solves **packaging**, not protection: it bundles your app and interpreter into one executable, but the archive is trivially unpacked back to `.pyc` bytecode with freely available tools — it was never designed to keep secrets. MagicLock artifacts stay encrypted wherever the files travel, and only become a running program on devices you authorize. The two compose fine: protect with MagicLock, package however you like.
+
+→ Full comparison: [magiclock.net/compare/pyinstaller](https://magiclock.net/compare/pyinstaller)
 
 ## FAQ
 

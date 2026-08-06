@@ -117,21 +117,31 @@ magiclock protect app.py --web-gate
 
 编译器和打包器解决的是分发问题，不是保护和授权；混淆花足够功夫就能还原。MagicLock 把加密、节点锁授权、原生编译合为一个工具，还补上了上面谁都没有的两样：逐设备的模型加密，和远程叫停开关。
 
+更完整、持续更新的对比在官网：**[magiclock.net/zh-Hans/compare](https://magiclock.net/zh-Hans/compare)**。
+
 ### MagicLock vs PyArmor
 
 PyArmor 是最知名的 Python **混淆器**：把脚本变换成混淆字节码，付费版提供机器绑定。但混淆本质上还是把完整程序交到了拿到文件的人手里——花足够功夫就能还原。MagicLock 走的是**加密**路线：在未授权机器上没有东西可供逆向，只有密文。混淆做不到的事 MagicLock 也补上了——逐设备的 AI 模型加密、可选的远程叫停开关；编译档更是直接出厂原生机器码，每个模块都织入授权关卡。
+
+→ 完整对比：[magiclock.net/zh-Hans/compare/pyarmor](https://magiclock.net/zh-Hans/compare/pyarmor)
 
 ### MagicLock vs SOURCEdefender
 
 SOURCEdefender 用 AES 加密 `.py` 文件、在导入时解密，支持限时脚本。它回答的是"别人能不能读我的源码"，而不是"谁有权运行它"——没有设备绑定，没有模型加密，交付之后也没有任何干预手段。MagicLock 补上了节点锁授权（产物在未授权机器上拒绝解密）、逐设备的 AI 模型信封、原生编译档，以及可选的云端开关。
 
+→ 完整对比：[magiclock.net/zh-Hans/compare/sourcedefender](https://magiclock.net/zh-Hans/compare/sourcedefender)
+
 ### MagicLock vs Nuitka / Cython
 
 Nuitka 和 Cython 把 Python **编译**成 C 和原生代码——性能出色，也确实提高了阅读门槛，但它们不是授权工具：二进制拿到就能跑、永远能跑，随包分发的模型权重更是明文躺在旁边。MagicLock 的编译档同样基于原生编译，然后补上编译器不管的部分：每个模块的授权关卡、设备绑定、模型加密、有效期。
 
+→ 完整对比：[magiclock.net/zh-Hans/compare/nuitka-cython](https://magiclock.net/zh-Hans/compare/nuitka-cython)
+
 ### MagicLock vs PyInstaller
 
 PyInstaller 解决的是**打包**，不是保护：把应用和解释器捆成一个可执行文件，但用公开工具就能轻易解回 `.pyc` 字节码——它本来就不是为保密设计的。MagicLock 的产物不管文件流落到哪里都保持加密，只在你授权的设备上才能变成一个能运行的程序。两者完全可以搭配：先用 MagicLock 保护，再按你喜欢的方式打包。
+
+→ 完整对比：[magiclock.net/zh-Hans/compare/pyinstaller](https://magiclock.net/zh-Hans/compare/pyinstaller)
 
 ## 常见问题
 
