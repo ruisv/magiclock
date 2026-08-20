@@ -6,8 +6,9 @@
 
 **Encrypt Python source code and AI models — they run only on the devices you authorize, fully offline.**
 
-[Website](https://magiclock.net) · [Documentation](https://magiclock.net/docs) · [Pricing](https://magiclock.net/pricing) · [简体中文 README](README.zh-CN.md)
+[Website](https://magiclock.net) · [Documentation](https://magiclock.net/docs) · [Pricing](https://magiclock.net/pricing) · [PyPI](https://pypi.org/project/magiclock/) · [简体中文 README](README.zh-CN.md)
 
+[![PyPI](https://img.shields.io/pypi/v/magiclock)](https://pypi.org/project/magiclock/)
 ![Python 3.9–3.14](https://img.shields.io/badge/python-3.9%E2%80%933.14-blue)
 ![Platforms](https://img.shields.io/badge/platforms-macOS%20%C2%B7%20Windows%20%C2%B7%20Linux-lightgrey)
 ![Runtime network](https://img.shields.io/badge/runtime%20network-not%20required-success)

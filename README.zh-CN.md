@@ -6,8 +6,9 @@
 
 **你的代码和模型，只在你授权的设备上运行——许可校验全程离线。**
 
-[官网](https://magiclock.net) · [文档](https://magiclock.net/zh-Hans/docs) · [价格](https://magiclock.net/zh-Hans/pricing) · [English README](README.md)
+[官网](https://magiclock.net) · [文档](https://magiclock.net/zh-Hans/docs) · [价格](https://magiclock.net/zh-Hans/pricing) · [PyPI](https://pypi.org/project/magiclock/) · [English README](README.md)
 
+[![PyPI](https://img.shields.io/pypi/v/magiclock)](https://pypi.org/project/magiclock/)
 ![Python 3.9–3.14](https://img.shields.io/badge/python-3.9%E2%80%933.14-blue)
 ![Platforms](https://img.shields.io/badge/%E5%B9%B3%E5%8F%B0-macOS%20%C2%B7%20Windows%20%C2%B7%20Linux-lightgrey)
 ![Runtime network](https://img.shields.io/badge/%E8%BF%90%E8%A1%8C%E6%97%B6%E8%81%94%E7%BD%91-%E4%B8%8D%E9%9C%80%E8%A6%81-success)
